@@ -3,52 +3,229 @@
 
 <head>
     <title>Seth Carmody Portfolio Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css'>
 </head>
 
-<body>
-    <h1>Seth Carmody</h1>
-    <p>My name is Seth Carmody. I am a 20 year old GIMM student at Boise State University. This is a Portfolio website
-        which will host information about me as well as many of my works that I have created during my time as a GIMM
-        student.
-    </p>
+<body class="textStyle">
+    <nav class="navbar navbar-expand-lg navbar-dark navbarColor sticky-top">
+        <div class="container-fluid">
+            <h1>Seth Carmody</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link textStyle" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textStyle" href="#artifacts">Artifacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-1 boxColor"></div>
+            <div class="col-md-3 boxColor">
+                <div class="waviy">
+                    <span>W</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span>C</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>E</span>
+                </div>
+            </div>
+            <div class="col-md-2 boxColor">
+                <div class="waviy">
+                    <span>T</span>
+                    <span>O</span>
+                </div>
+            </div>
+            <div class="col-md-2 boxColor">
+                <div class="waviy">
+                    <span>M</span>
+                    <span>Y</span>
+                </div>
+            </div>
+            <div class="col-md-3 boxColor">
+                <div class="waviy">
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>O</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>O</span>
+                </div>
+            </div>
+            <div class="col-md-1 boxColor"></div>
+        </div>
+    </div> -->
+    <div class="container" id="aboutMe">
+        <div class="row">
+            <div class="col-md-4" id="imgMargin">
+                <img class="img-fluid" src="portpic.png" alt="Seth Carmody in a Suit">
+            </div>
+            <div class="col-md-8">
+                <h1>About Me</h1>
+                <p>
+                    <br>
 
-    <hr>
+                    My name is Seth Carmody. I am a 20 year old GIMM student at Boise State University. I was born in
+                    Visalia,
+                    CA and raised in Bakersfield, CA. I am currently living in Boise, ID while attending Boise State
+                    University.
 
-    <img src="portpic.png" alt="Seth Carmody in a Suit">
+                    <br>
+                    <br>
 
-    <hr>
+                    I have experience in Game Design using Unity as well as UX design. I also have experience with
+                    website
+                    design using HTML and CSS as well as backend development with Node and mySQL.
 
-    <a href="https://github.com/SethCarmody">Github</a>
+                    <hr />
 
-    <a href="sjscarmody@yahoo.com">My Email</a>
+                    My biggest hobbies are playing Video Games and watching Football, LETS GO GIANTS!!! I am also a
+                    community member
+                    within the Boise area Super Smash Bros scene.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="container artifactPad" id="artifacts">
+        <h1>Artifacts</h1>
+        <br>
+        <div class="row">
 
-    <hr>
+            <!-- Select Artifacts -->
+            <div class="col-12 p-3 boxColor boxMargin text-center">
+                <button class="button w-25" onclick="gimm110()">Unity 2D Platformer</button>
+                <button class="button w-25" onclick="gimm200()">Adobe XD App Redesign</button>
+            </div>
 
-    <h2>Artifacts</h2>
+            <!-- Display Artifacts -->
 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-    </p>
+            <!-- GIMM 110 -->
+            <div class="col-md-6" id="gimm110">
+                <img class="img-fluid" src="gimm110.png" alt="Seth Carmody in a Suit">
+                <img class="img-fluid" src="gimm110other.png" alt="Seth Carmody in a Suit">
+            </div>
+            <div class="col-md-6" id="gimm110Text">
+                <p>
+                    My GIMM 110 final was an individual game that I created. The game is a Metroidvania in which the
+                    player can engage in combat with enemies as well as explore the levels. The project features
+                    two levels; a tutorial and one actual level.
 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-    </p>
+                    <br>
+                    <br>
 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-    </p>
+                    * Note: All assests used were from the Unity store.
+
+                    <br>
+                    <br>
+
+                    This project taught how to create games using the Unity Engine as well as giving me experince with
+                    coding, designing levels and planning.
+
+                </p>
+            </div>
+
+            <!-- GIMM 200 -->
+            <div class="col-md-4" id="gimm200">
+                <img class="img-fluid img-thumbnail" src="gimm200.png" alt="Adobe XD App">
+            </div>
+            <div class="col-md-4" id="gimm200Wish">
+                <img class="img-fluid img-thumbnail" src="gimm200summon.png" alt="Adobe XD App">
+            </div>
+            <div class="col-md-4" id="gimm200Text">
+                <p>
+                    This project was a redesign of a mobile app using Adobe XD. I choose to redesign the Hoyolab app to
+                    make it function as a Genshin Impact companion app.
+
+                    <br>
+                    <br>
+
+                    The main page is organized between account tools and game tools. Account tools require you to log
+                    into an
+                    account to use while game tools are accesable for everyone. Users who are signed into an account can
+                    do various things that were not possible on the main app, such as adding and accepting friends and
+                    viewing your accounts wish history.
+
+                    <br>
+                    <br>
+
+                    From this project, I learned basic UX and UI principles as well as how to use Adobe XD to make
+                    prototypes of mobile applications.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="navbarColor sticky-bottom textStyle">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="https://github.com/SethCarmody" class="nav-link textStyle px-2 ">Github</a></li>
+            <li class="nav-item"><a href="#" class="nav-link textStyle px-2 ">Email</a></li>
+        </ul>
+    </footer>
+
+    <!-- Controls Artifacts -->
+    <script>
+        var gimm110Display = document.getElementById("gimm110");
+        var gimm200Display = document.getElementById("gimm200");
+        var gimm200Wish = document.getElementById("gimm200Wish");
+
+        var gimm110Text = document.getElementById("gimm110Text");
+        var gimm200Text = document.getElementById("gimm200Text");
+
+        gimm200Display.style.display = "none";
+        gimm200Text.style.display = "none";
+        gimm200Wish.style.display = "none";
+    </script>
+
+    <!--Show/Hide Data-->
+    <script>
+        function gimm110() {
+            var gimm110 = document.getElementById("gimm110");
+            var gimm200 = document.getElementById("gimm200");
+            var gimm110Text = document.getElementById("gimm110Text");
+            var gimm200Text = document.getElementById("gimm200Text");
+            var gimm200Wish = document.getElementById("gimm200Wish");
+
+            if (gimm110.style.display === "none") {
+                gimm110.style.display = "block";
+                gimm110Text.style.display = "block";
+                gimm200.style.display = "none";
+                gimm200Text.style.display = "none";
+                gimm200Wish.style.display = "none";
+            }
+        }
+        function gimm200() {
+            var gimm110 = document.getElementById("gimm110");
+            var gimm200 = document.getElementById("gimm200");
+            if (gimm200.style.display === "none") {
+                gimm200.style.display = "block";
+                gimm200Text.style.display = "block";
+                gimm200Wish.style.display = "block";
+                gimm110.style.display = "none";
+                gimm110Text.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #212129, #323949, #3d3e51, #40445a, #4c5265);
+    background-size: 1000% 1000%;
+    animation: gradient 12s ease infinite;
+    height: fit-content;
+    margin: 0;
+}
+
+.navbarColor {
+    background-color: #171C30
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.boxColor {
+    background-color: #171C30;
+}
+
+.boxMargin {
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    padding-top: 8px;
+    font-size: 50pxs;
+    text-align: center;
+}
+
+.textStyle {
+    text-align: left;
+    color: #FAF6F5;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+.contentMargin {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#imgMargin {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+button {
+    border: 1px solid black;
+    background-color: #202A42; color: #FAF6F5;
+    padding: 8px 8px;
+    font-size: 18px;
+}
+
+.artifactPad {
+    padding-bottom: 20px;
+}
+
+/* CSS Animation */
+
+.waviy {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    text-align: center;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #FAF6F5;
+    text-transform: uppercase;
+    animation: flip 7s infinite;
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
