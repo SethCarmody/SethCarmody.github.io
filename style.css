@@ -71,29 +71,3 @@ button {
 .artifactPad {
     padding-bottom: 20px;
 }
-
-/* CSS Animation */
-
-.waviy {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    position: relative;
-    text-align: center;
-}
-
-.waviy span {
-    position: relative;
-    display: inline-block;
-    font-size: 40px;
-    color: #FAF6F5;
-    text-transform: uppercase;
-    animation: flip 7s infinite;
-}
-
-@keyframes flip {
-
-    0%,
-    80% {
-        transform: rotateY(360deg)
-    }
-}
